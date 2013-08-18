@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Hogwash",
+  "version": "0.1",
+  "description": "Monitors GitHub and friends",
+
+  "background": {
+    "scripts": [
+      "promise.js",
+      "chrome.js",
+      "comm.js",
+      "settings.js",
+      "github.js",
+      "hogwash.js"
+    ]
+  },
+
+  "browser_action": {
+    "default_title": "Hogwash",
+    "default_popup": "popup.html",
+    "default_icon": "img/icon38.png"
+  },
+
+  "permissions": [
+    "https://api.github.com/*",
+    "https://api.travis-ci.org/*"
+  ]
+}
